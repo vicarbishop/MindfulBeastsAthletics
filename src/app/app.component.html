@@ -1,0 +1,45 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+<p-button label="Red" (onClick)="load('red')" severity="danger" [raised]="true" class="mx-3"></p-button>
+<p-button label="Green" (onClick)="load('green')" severity="success" [raised]="true"  class="mx-3"></p-button>
+<p-button label="Blue" (onClick)="load('blue')" [raised]="true" ></p-button>
+-->
+
+<button (click)="load('red')" style="border: 0px; ">
+  <span style="color:red; line-height: 50px;font-size:50px;">&#x2B22;</span>
+</button>
+<button (click)="load('green')" style="border: 0px; ">
+  <span style="color:green; line-height: 50px;font-size:50px;">&#x2B22;</span>
+</button>
+<button (click)="load('blue')" style="border: 0px; ">
+  <span style="color:blue; line-height: 50px;font-size:50px;">&#x2B22;</span>
+</button>
+
+<!---->
+@if ( colorChoice == 'blue'){
+  <app-header-blue></app-header-blue>
+  <main>
+    <router-outlet name="blue"></router-outlet>
+  </main>
+  <app-footer-blue></app-footer-blue>
+}
+@else if ( colorChoice == 'green' ){
+  <app-header-green></app-header-green>
+  <main>
+    <router-outlet name="green"></router-outlet>
+  </main>
+  <app-footer-green></app-footer-green>
+}
+@else if ( colorChoice =='red' ){
+  <app-header></app-header>
+  <main>
+    <router-outlet name="red"></router-outlet>
+  </main>
+  <app-footer></app-footer>
+}
