@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
 
+In VS Code at terminal:
+git init
+git add .
+git commit -m "Initial MBA commit"
+open the .git/info/exclude file and add node_modules, save file to exclude this from being sent to remote
+# create the remote repo in github... it's under vicarbishop user. Grab the URL for the following
+git remote add origin https://github.com/vicarbishop/MindfulBeastsAthletics.git
+git branch -M main
+git push -u origin main
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
