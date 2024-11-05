@@ -1,0 +1,274 @@
+.container{
+    max-width: 80% !important;
+}
+
+hr{
+    margin: 0;
+    height:5px;
+    border:none;
+    color:#FEE715;
+    background-color:#FEE715;
+    opacity: 1.0 !important;
+}
+
+.nav-link{
+    display: inline;
+    color: #12173f;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  .card-body{
+    color: white;
+    background-color: #666666;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(0, 0, 0, 0.68);
+    border: none;
+    border-radius: .35rem;
+  }
+  .carousel-inner {
+    padding: 1em 0;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #000000;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  @media (min-width: 900px) {
+    .card img {
+      height: 300px;
+    }
+  }
+  @media (max-width: 900px) {
+    .card img {
+      height: 200px;
+    }
+  }
+  @media (max-width: 576px) {
+    .card img {
+      height: 100px;
+    }
+  }
+
+.pull-right {
+    margin: 0 0 0 auto;
+}
+
+.bballList {
+    margin-bottom: 0;
+}
+
+span {
+    display:inline-block;
+    vertical-align: text-bottom;
+}
+
+.outerLeft-line{
+    width:80%;
+    border-bottom: 1px solid #12173f;
+}
+
+.outerRight-line{
+    width:75%;
+    border-bottom: 1px solid #12173f;
+}
+
+.outerLeft-line-bball{
+  width:80%;
+  border-bottom: 1px solid white;
+}
+
+.outerRight-line-bball{
+  width:75%;
+  border-bottom: 1px solid white;
+}
+
+.containerHRLEFT:before{
+    content: "";
+    top: calc(50% - 1px);
+    height: 1px;
+    background: #990000;
+    float:left;
+    width:80%;
+}
+
+.Mbackground{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mbackground::before{ 
+    content:"";
+    /*background-image: url('../../../../assets/bballTeam.svg');
+    background-size: cover;*/
+    opacity: .15;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.gallery-gradient{
+    padding: 1rem 0;
+    /*background: linear-gradient(225deg, #0d47a1, #42a5f5);
+    background: linear-gradient(270deg, #996666, #990000 ); */
+    /* background-color:  #333333; 
+    background-color: #12173f;*/
+    position: relative;
+    background: linear-gradient(0deg,  #5d76a9, #12173f); 
+    /*background: linear-gradient(180deg,  #eaedf4, #12173f); */
+    z-index: 0;
+}
+
+.gallery-gradient::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/bg_texture_8.2fcd3f1e2024106c2a79.png');
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+    z-index: -1;
+}
+
+.nga-gradient {
+    padding: 1rem 0;
+    /*background: linear-gradient(225deg, #0d47a1, #42a5f5);
+    background: linear-gradient(270deg, #996666, #990000 );*/
+    position: relative;
+    background: linear-gradient(180deg, #ffffff, #999999); 
+    z-index: -2;
+}
+
+.nga-gradient::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/bg_texture_8.2fcd3f1e2024106c2a79.png');
+    width: 100%;
+    height: 100%;
+    opacity: .35;
+    z-index: 1;
+}
+
+.basketball{
+    position: relative;
+    /*background: linear-gradient(0deg,  #333333, #cccccc); */
+    background-color:  #5d76a9; 
+    z-index: 0;
+}
+
+/*.basketball::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/bg_texture_8.2fcd3f1e2024106c2a79.png');
+    width: 100%;
+    height: 100%;
+    opacity: .20;
+    z-index: 1;
+}
+*/
+
+.football{
+    position: relative;
+    /*background: linear-gradient(0deg,  #333333, #cccccc); */
+    background-color:  #eeeeee; 
+    z-index: 0;
+}
+
+ .carousel-inner > .carousel-item > img {
+    max-width: 125%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.nga-btn-home {
+    font-family: inherit;
+    color: inherit;
+    display: inline-block;
+    line-height: 32px;
+    line-height: 3.2rem;
+    padding: 0 16px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 3px;
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+    color: #FEE715;
+}
+
+.nga-btn-home {
+    background-color: #12173f;
+    padding: 2px 34px 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 30px;
+    line-height: 3rem;
+    border-radius: 48px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    box-sizing: border-box;
+    cursor: pointer
+}
+
+.nga-btn-home:hover {
+    background-color: #09238d;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.nga-card-step {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 3px 3px rgba(0, 0, 0, .09);
+    margin: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nga-card-step:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .09), 0 4px 4px rgba(0, 0, 0, .13);
+    border-radius: 5px;
+    color: #0d6efd;
+
+}
+
+.nga-card-step a {
+    color: black;
+    text-decoration: none;
+}
+
+.nga-card-step a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+}
